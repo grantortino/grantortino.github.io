@@ -48,12 +48,16 @@ header {
 
 footer {
     background-color: ivory;
-    padding-bottom: 0.7em;
-    color: saddlebrown
 }
 
 div {
     background-color: yellow;
+}
+
+.first-words-work-section {
+    background-color: white;
+    color: black;
+    padding: 0 5px;
 }
 /*
 Navigation
@@ -86,13 +90,13 @@ nav.main-navigation ul li a{
 text-decoration: none;
 color: black;
 background-color: yellow;
-padding: 0.7px 9px;
+padding: 0px 9px;
 font-weight: 600;
 }
 
 nav.main-navigation ul li a:hover {
-color: white;
-background-color: darkgoldenrod;
+color: yellow;
+background-color: white;
 }
 
 
@@ -110,8 +114,9 @@ p {
 
 .work-page {
     font-size: 50px;
-    font-weight: 900;
+    font-weight: 1000;
     text-align: center;
+    margin: 5px;
 }
 /*
 Responsive Design

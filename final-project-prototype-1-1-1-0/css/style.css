@@ -25,7 +25,19 @@ nav ul {
     margin-top: 1em;
 }
 
+header {
+    padding-bottom: 10px;
+}
 
+main {
+    padding: 500em;
+}
+
+div {
+    height: 300px;
+    width: 200px;
+    margin: 0 auto;
+}
 /*
 Colors and Style
 */
@@ -42,6 +54,10 @@ footer {
     background-color: ivory;
     padding-bottom: 0.7em;
     color: saddlebrown
+}
+
+div {
+    background-color: yellow;
 }
 /*
 Navigation
@@ -62,7 +78,7 @@ text-transform: uppercase;
 }
 
 nav.main-navigation ul {
-    
+    text-align: center;
 }
 
 /* what is this function? */
@@ -73,6 +89,14 @@ display: inline-block;
 nav.main-navigation ul li a{
 text-decoration: none;
 color: black;
+background-color: yellow;
+padding: 2px 9px;
+font-weight: 600;
+}
+
+nav.main-navigation ul li a:hover {
+color: white;
+background-color: darkgoldenrod;
 }
 
 
@@ -84,6 +108,9 @@ body {
     font-family: 'Lexend Mega', sans-serif;
 }
 
+p {
+    line-height: 1.5em;
+}
 /*
 Responsive Design
 */

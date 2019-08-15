@@ -25,17 +25,13 @@ nav ul {
     margin-top: 1em;
 }
 
-header {
-    padding-bottom: 10px;
-}
-
 main {
     padding: 500em;
 }
 
 div {
-    height: 300px;
-    width: 200px;
+    height: 500px;
+    width: 700px;
     margin: 0 auto;
 }
 /*
@@ -90,7 +86,7 @@ nav.main-navigation ul li a{
 text-decoration: none;
 color: black;
 background-color: yellow;
-padding: 2px 9px;
+padding: 0.7px 9px;
 font-weight: 600;
 }
 
@@ -110,6 +106,12 @@ body {
 
 p {
     line-height: 1.5em;
+}
+
+.work-page {
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
 }
 /*
 Responsive Design

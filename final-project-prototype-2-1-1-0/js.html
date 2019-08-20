@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+    <head>
+    
+        <title>some basic js</title>
+        
+        <style>
+        
+            .my-button {
+                cursor:pointer;
+            }
+            
+            #myImage {
+                cursor:pointer;
+            }
+        
+        </style>
+        
+    </head>
+    
+    <body>
+    
+    <button onclick='alert("eat!")'>I am hungry!</button>
+    
+    <p class="my-button" onclick='alert("eat!")'>I am hungry!</p>
+
+    
+    <button onclick='document.getElementById("my-result").innerHTML = 10+10'>what is 10+10?</button>
+    
+    <p>
+        Result: <span id="my-result"></span>
+    </p>
+
+    <button onclick="document.getElementById('myImage').src='img/face-yellow.jpg'">Click to portray my face</button>
+
+    <img id="myImage" src="img/arrow.jpg" style="width:200px">
+
+    <button onclick="document.getElementById('myImage').src='img/arrow.jpg'">Click to get back to the arrow</button>
+
+    
+    </body>
+    
+</html>

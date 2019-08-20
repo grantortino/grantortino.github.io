@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en">
+   
+   <head>
+      
+        <title></title>
+      
+        <link rel="stylesheet" href="css/style.css">
+       
+        <style>
+            /* adding color to make the transition more evident - here red and green in the media query */ 
+            body {
+                background-color: #fff300;
+                font-size: 1.5em;
+                color:#fff;
+            }
+            
+            #burger-icon {
+                width:2em;
+                height:2em;
+                background-color: red;
+            }
+            
+            /* this is a media query - a switch to detect the screen-size. it is a test and it is connected to screen-based media (in this case) - a number is set as a condition between brackets - */
+            
+            #desktop-nav {
+                display:none;
+            }
+            
+            #mobile-nav-menu {
+                display:none;
+            }
+            
+            #desktop-nav-menu {
+                display:none;
+            }
+
+            #mobile-nav-menu {
+            text-transform: uppercase;
+            }
+
+            #mobile-nav-menu ul {
+                text-align: center;
+            }
+
+            #mobile-nav-menu ul li {
+            display:grid;
+            }
+
+            #mobile-nav-menu ul li a {
+            text-decoration: none;
+            color: red;
+            background-color: white;
+            padding: 0px 9px;
+            font-weight: 600;
+            }
+
+            
+            /* RESPONSIVE DESIGN - when the screen reaches 600px the media query blocks the desktop menu and show the mobile one - it displays what happens in desktop mode */
+            @media only screen and (min-width:600px) {
+            #desktop-nav {
+                display:block;
+            }
+
+            #mobile-nav {
+                display:none;
+            }
+                
+            #mobile-nav-menu {
+                    display:none;
+            }
+
+            body {
+                background-color: green;
+            }
+                
+            #burger-icon {
+                    display:none;
+            }
+                
+            #desktop-nav-menu {
+                    display:block;
+            }
+
+
+        </style> 
+        
+   </head>
+   
+   <body>
+      
+        <header>
+        
+            <h1>Page Title</h1>
+            <nav id="mobile-nav">I am the mobile menu</nav>
+            
+             <div id="burger-icon" onclick="document.getElementById('mobile-nav-menu').style.display ='block'"></div>            
+            
+             <nav id="mobile-nav-menu">
+              
+                <ul>
+
+                    <li><a href="#">KNOW</a></li>
+                    <li><a href="#">WORK</a></li>
+                    <li><a href="#">PLAY</a></li>
+                    <li><a href="#">MEET</a></li>
+
+                </ul>
+                
+             </nav>
+
+            <nav id="desktop-nav">I am the desktop menu</nav>
+            
+                <div id="desktop-nav-menu">
+            
+                <ul>
+                    <li><a href="#">BLA</a></li>
+                    <li><a href="#">BLA</a></li>
+                    <li><a href="#">BLA</a></li>
+                    <li><a href="#">BLA</a></li>
+                </ul>
+                
+                </div>
+
+        </header>
+        
+        <section>
+        
+        </section>
+        
+        <aside>
+            
+        </aside>
+    
+        <footer>
+
+        </footer>
+       
+   </body>
+    
+</html>

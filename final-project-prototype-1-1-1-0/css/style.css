@@ -18,19 +18,13 @@ always start with a RESET, see below -> it's a reset
 Layout
 */
 
-h1,h2,h3,h4,h5,h6,
-p,
-nav ul {
-    padding-left: 20px;
-    margin-top: 1em;
-}
 
 main {
     padding: 500em;
 }
 
 div {
-    height: 70px;
+    height: 20px;
     width: 700px;
     margin: 0 auto;
 }
@@ -38,30 +32,29 @@ div {
 Colors and Style
 */
 
+.mobile-face {
+        
+}
+
 body {
     background-color: #fff300;
 }
-
+/*
 header {
     background-color: ivory;
 }
+*/
 
-footer {
-    background-color: ivory;
-}
-
+/*
 div {
-    background-color: #fff300;
+    background-color: greenyellow;
 }
-
+*/
 .first-words-work-section {
     background-color: white;
     color: black;
     padding: 0 5px;
 }
-/*
-Navigation
-*/
 
 /* nav ul {
     to erase dots in every unordered list contained in a navigation section (nav tag) 
@@ -93,11 +86,13 @@ p {
 }
 */
 
+/*
+Navigation
+*/
+
 .page-title {
     display:none;
 }
-
-
 
 #desktop-navigation {
     display:none;
@@ -122,15 +117,24 @@ p {
 
 #mobile-navigation ul a {
     text-decoration:none;
-    color:white;
-    background-color:white;
+    color:ivory;
     font-weight: 600;
     font-size:2.7em;
     background-color:#fff300;
-    padding:0.5em;
+    padding:0.7em;
     font-family: 'Lexend Mega', sans-serif;
 }
+
+.work-page{
+    font-size:3em;
+    font-weight: bolder;
+}
+
 /* this diplays what happens in desktop mode! */
+
+/*
+Responsive Design
+*/
 @media only screen and (min-width: 600px) {
     
     .page-title {
@@ -139,11 +143,11 @@ p {
         background-color:#fff300; 
         font-size:5em;
         padding-bottom:1.3em;
+        margin-top:auto;
     }
     
     #desktop-navigation {
         display:block;
-
     }         
     
     #mobile-navigation {
@@ -186,10 +190,14 @@ body {
     height: 150px;
     width: 100%;
     margin: 0 auto;
+    background-color:#fff300;
     }
     
     footer {
         margin: 0 auto;
+
+}
+
     }
 
 /*

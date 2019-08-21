@@ -30,7 +30,7 @@ main {
 }
 
 div {
-    height: 500px;
+    height: 70px;
     width: 700px;
     margin: 0 auto;
 }
@@ -39,7 +39,7 @@ Colors and Style
 */
 
 body {
-    background-color: yellow;
+    background-color: #fff300;
 }
 
 header {
@@ -51,7 +51,7 @@ footer {
 }
 
 div {
-    background-color: yellow;
+    background-color: #fff300;
 }
 
 .first-words-work-section {
@@ -73,51 +73,125 @@ Navigation
     list-style-type: none; */
 }
 
-nav.main-navigation {
-text-transform: uppercase;
-}
-
-nav.main-navigation ul {
-    text-align: center;
-}
-
-/* what is this function? */
-nav.main-navigation ul li {
-display: inline-block;
-}
-
-nav.main-navigation ul li a{
-text-decoration: none;
-color: black;
-background-color:  ;
-padding: 0px 9px;
-font-weight: 600;
-}
-
-nav.main-navigation ul li a:hover {
-color: yellow;
-background-color: white;
-}
-
 
 /*
 Typography
 */
 
-body {
-    font-family: 'Lexend Mega', sans-serif;
-}
-
 p {
     line-height: 1.5em;
 }
 
-.work-page {
-    font-size: 50px;
+/*
+.page-title {
+    font-size:3em;
     font-weight: 1000;
     text-align: center;
-    margin: 5px;
+    margin:0px;
+    background-color:yellow;
+    font-family: 'Lexend Mega', sans-serif;
 }
+*/
+
+.page-title {
+    display:none;
+}
+
+
+
+#desktop-navigation {
+    display:none;
+}
+
+#mobile-navigation img {
+    width:100%;
+}
+
+#mobile-navigation {
+    display:block;
+    background-color:#fff300;
+}
+
+#mobile-navigation ul {
+        text-align: center;   
+}
+
+#mobile-navigation ul li{
+        display:grid;
+}
+
+#mobile-navigation ul a {
+    text-decoration:none;
+    color:white;
+    background-color:white;
+    font-weight: 600;
+    font-size:2.7em;
+    background-color:#fff300;
+    padding:0.5em;
+    font-family: 'Lexend Mega', sans-serif;
+}
+/* this diplays what happens in desktop mode! */
+@media only screen and (min-width: 600px) {
+    
+    .page-title {
+        display:block;
+        text-align: center;
+        background-color:#fff300; 
+        font-size:5em;
+        padding-bottom:1.3em;
+    }
+    
+    #desktop-navigation {
+        display:block;
+
+    }         
+    
+    #mobile-navigation {
+        display:none;
+    }
+    
+#desktop-navigation {
+text-transform: uppercase;
+background-color:#fff300;
+}
+
+#desktop-navigation ul {
+text-align: center;
+}
+
+/* what is this function? */
+#desktop-navigation ul li {
+display: inline-block;
+}
+
+#desktop-navigation ul li a{
+text-decoration: none;
+color: white;
+background-color: #fff300;
+font-size:1.7em;
+padding: 0px 9px;
+font-weight: 600;
+}
+
+#desktop-navigation ul li a:hover {
+color: black;
+background-color: white;
+}
+
+body {
+    font-family: 'Lexend Mega', sans-serif;
+}
+
+    div {
+    height: 150px;
+    width: 100%;
+    margin: 0 auto;
+    }
+    
+    footer {
+        margin: 0 auto;
+    }
+
 /*
 Responsive Design
 */

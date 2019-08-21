@@ -16,18 +16,42 @@
                 color:#fff;
             }
             
+            /*
             #burger-icon {
                 width:2em;
                 height:2em;
                 background-color: red;
             }
+            */
             
-            /* this is a media query - a switch to detect the screen-size. it is a test and it is connected to screen-based media (in this case) - a number is set as a condition between brackets - */
+            #burger-icon {
+                margin: 0 20px;
+            }
+
+            #burger-icon div {
+                width: 30px;
+                height: 5px;
+                border-radius: 2px;
+                background-color: rgba(150,160,170,0.9);
+                margin: 3px 0 0 0;
+            }
+
+
+            #burger-icon:hover div {
+                background-color: rgb(160,170,180);
+            }
+
+            #burger-icon:hover {
+            cursor: pointer;
+                }
             
             #desktop-nav {
                 display:none;
             }
             
+            /* this is a media query - a switch to detect the screen-size. it is a test and it is connected to screen-based media (in this case) - a number is set as a condition between brackets - */
+            
+
             #mobile-nav-menu {
                 display:none;
             }
@@ -86,18 +110,47 @@
 
         </style> 
         
+        <script>
+
+        var minHeight = 40;
+        var maxHeight = 195;      
+
+
+        function toggleMobileNav() {
+          var x = document.getElementById("mobile-nav");
+          if (x.style.height === maxHeight + "px") {
+            x.style.height = minHeight + "px";
+          } else {
+            x.style.height = maxHeight + "px";
+          }
+        }
+
+        function hideMobileNav() {
+            document.getElementById('mobile-nav').style.height=minHeight + "px"
+        }        
+
+        </script>
+        
    </head>
    
    <body>
       
         <header>
         
-            <h1>Page Title</h1>
+            <h1>page title</h1>
             <nav id="mobile-nav">I am the mobile menu</nav>
-            
-             <div id="burger-icon" onclick="document.getElementById('mobile-nav-menu').style.display ='block'"></div>            
-            
-             <nav id="mobile-nav-menu">
+<!--            <div id="burger-icon" onclick="toggleMobileNav()">
+                <div></div>
+                <div></div>                
+                <div></div> 
+-->               
+            <div id="burger-icon" onclick="toggleMobileNav()">
+                <div></div>
+                <div></div>                
+                <div></div>  
+
+                
+            <nav id="mobile-nav-menu">
               
                 <ul>
 
@@ -108,7 +161,7 @@
 
                 </ul>
                 
-             </nav>
+            </nav>
 
             <nav id="desktop-nav">I am the desktop menu</nav>
             

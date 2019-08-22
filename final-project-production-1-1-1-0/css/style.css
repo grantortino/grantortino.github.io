@@ -13,7 +13,14 @@ Layout
 
 .garden-pic {
     border-radius:50%;
-    
+}
+
+.h2-wrapper {
+    height: 100vh;
+}
+
+.h2-wrapper h2 {
+    padding-top:20vh;
 }
 
 header {

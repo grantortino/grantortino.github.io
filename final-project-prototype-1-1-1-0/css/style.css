@@ -142,7 +142,7 @@ Responsive Design
         text-align: center;
         background-color:#fff300; 
         font-size:5em;
-        padding-bottom:1.3em;
+        padding-bottom:0.3em;
         margin-top:auto;
     }
     
@@ -160,12 +160,15 @@ background-color:#fff300;
 }
 
 #desktop-navigation ul {
-text-align: center;
+text-align:center;
+align-content:flex-start;
 }
 
 /* what is this function? */
 #desktop-navigation ul li {
-display: inline-block;
+height:2em;
+overflow-y:hidden;
+display:inline-block;
 }
 
 #desktop-navigation ul li a{
@@ -177,11 +180,27 @@ padding: 0px 9px;
 font-weight: 600;
 }
 
+#desktop-navigation ul li:hover {
+height:7em;
+}    
+    
 #desktop-navigation ul li a:hover {
 color: black;
 background-color: white;
 }
+    
+    
+    img {
+        padding-bottom:4em;
+    }
+.know-desc, span {
+    display:none;
+    }
 
+.know-desc, span {
+    display:block;
+}    
+    
 body {
     font-family: 'Lexend Mega', sans-serif;
 }
@@ -195,7 +214,6 @@ body {
     
     footer {
         margin: 0 auto;
-
 }
 
     }

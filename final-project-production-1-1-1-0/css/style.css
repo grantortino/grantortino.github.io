@@ -1,0 +1,173 @@
+/*
+Layout
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- avoid setting margins to the main, in order to be able to manipulate each element individually
+*/
+
+.garden-pic {
+    border-radius:50%;
+    
+}
+
+header {
+    background-color:#fff300;
+}
+
+h3,h4,p {
+    padding-left:3rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size:4em;
+    background-color: ivory;
+    margin-bottom:0.9em;
+}
+
+
+.upper-face-logo {
+    display:flex;
+    width:4rem;
+    height:auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#welcome-section1 {
+    margin:2em auto;
+}
+
+h2 {
+    margin:1.5em auto;
+}
+
+h3 {
+    margin:0.7em auto;
+}
+/*
+Colors and Style
+*/
+
+h3 {
+    background-color:yellow;
+    color:ivory;
+}
+.scroll-down {
+    background-color:ivory;
+}
+
+.scroll-down-arrow {
+      border-radius: 50%;
+      width: 2rem;
+      margin:0.3em;
+}
+
+.scroll-up {
+    background-color:ivory;
+}
+
+.scroll-up-arrow {
+      border-radius: 50%;
+      width: 2rem;
+      margin-top:2rem;
+}
+
+/*
+Typography
+*/
+
+h1,h2,h4,p {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+h2 {
+    font-size:15em;
+}
+
+h3 {
+    font-size:2.5em;
+    font-family: 'Beth Ellen', cursive;
+
+}
+
+h4,p {
+    font-size:2em;
+}
+
+.scroll-down {
+    text-align: center;
+}
+
+.scroll-up {
+    padding-left:3rem;
+}
+
+.garden-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top:6rem;
+    margin-bottom:4rem;
+}
+/* --- fonts families
+font-family: 'Lexend Deca', sans-serif;
+font-family: 'Beth Ellen', cursive;
+
+*/
+
+
+/*
+(Desktop) Navigation
+*/
+
+#desktop-navigation {
+text-transform: uppercase;
+background-color:#fff300;
+font-family: 'Lexend Deca', sans-serif;
+height: 2em;
+}
+
+#desktop-navigation ul {
+text-align:center;
+align-content:flex-start;
+}
+
+/* what is this function? */
+#desktop-navigation ul li {
+height:2em;
+overflow-y:hidden;
+display:inline-block;
+}
+
+#desktop-navigation ul li a{
+text-decoration: none;
+color: ivory;
+background-color: #fff300;
+font-size:1.7em;
+padding: 0px 9px;
+font-weight: 600;
+}
+    
+#desktop-navigation ul li a:hover {
+color: black;
+background-color: ivory;
+}
+
+/*
+Responsive Design
+*/

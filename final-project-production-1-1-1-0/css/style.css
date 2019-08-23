@@ -11,6 +11,10 @@ Layout
 /* --- avoid setting margins to the main, in order to be able to manipulate each element individually
 */
 
+h3 {
+    display:none;
+}
+
 form {
     padding:1.5em 3em
 }
@@ -145,6 +149,8 @@ h4,p {
     margin-top:6rem;
     margin-bottom:4rem;
 }
+
+
 /* --- fonts families
 font-family: 'Lexend Deca', sans-serif;
 font-family: 'Lexend Mega', sans-serif;
@@ -198,6 +204,10 @@ h2 {
 @media only screen and (min-width: 600px) {
     
 .prof-page-h1 {
+    display:block;
+}
+    
+h3 {
     display:block;
 }
     

@@ -11,8 +11,8 @@ Layout
 /* --- avoid setting margins to the main, in order to be able to manipulate each element individually
 */
 
-h1,h2,h3,h4,p {
-    margin-right:1em
+h1, h3, h4, p {
+    margin-right:0.5em
 }
 
 h3 {

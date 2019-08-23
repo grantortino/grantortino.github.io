@@ -10,6 +10,7 @@ Layout
 
 /* --- avoid setting margins to the main, in order to be able to manipulate each element individually
 */
+
 h3, h4, p {
     margin-right:0.5em
 }
@@ -25,6 +26,7 @@ form {
 .legal-js {
     padding:1em 3em;
 }
+
 .garden-pic {
     border-radius:50%;
 }
@@ -35,10 +37,6 @@ form {
 
 .h2-wrapper h2 {
     padding-top:20vh;
-}
-
-header {
-    background-color:#fff300;
 }
 
 h3,h4,p {
@@ -87,26 +85,13 @@ h3 {
     padding-left:3rem;
 }
 
-/*
-Colors and Style
-*/
-
-h3 {
-    background-color:yellow;
-    color:ivory;
-}
-.scroll-down {
-    background-color:ivory;
-}
-
-.scroll-down-arrow {
-      border-radius: 50%;
-      width: 2rem;
-      margin:0.3em;
-}
-
-.scroll-up {
-    background-color:ivory;
+.garden-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top:6rem;
+    margin-bottom:4rem;
 }
 
 .scroll-up-arrow {
@@ -122,6 +107,32 @@ h3 {
       width:30%;
 }
 
+.scroll-down-arrow {
+      border-radius: 50%;
+      width: 2rem;
+      margin:0.3em;
+}
+
+/*
+Colors and Style
+*/
+
+header {
+    background-color:#fff300;
+}
+
+h3 {
+    background-color:yellow;
+    color:ivory;
+}
+.scroll-down {
+    background-color:ivory;
+}
+
+.scroll-up {
+    background-color:ivory;
+}
+
 body {
     background-color: ivory;
 }
@@ -134,7 +145,6 @@ h1,h2,h4,p {
     font-family: 'Lexend Deca', sans-serif;
 }
 
-
 h3 {
     font-size:2.5em;
     font-family: 'Lexend Mega', sans-serif;
@@ -143,16 +153,6 @@ h3 {
 h4,p {
     font-size:2em;
 }
-
-.garden-pic {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    margin-top:6rem;
-    margin-bottom:4rem;
-}
-
 
 /* --- fonts families
 font-family: 'Lexend Deca', sans-serif;
@@ -163,7 +163,6 @@ font-family: 'Lexend Mega', sans-serif;
 /* 
 Mobile Navigation
 */
-
 
 #desktop-navigation {
     display:none;
@@ -277,6 +276,3 @@ h2 {
 }
     
 }
-/*
-Responsive Design
-*/
